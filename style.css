@@ -1,0 +1,103 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: #333;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Header style */
+header {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #6c5ce7;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #636e72;
+}
+
+/* Products gallery */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+/* Single product card */
+.product {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Product image */
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Product name */
+.product h2 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #2d3436;
+}
+
+/* Product description */
+.product p {
+  font-size: 0.95rem;
+  color: #636e72;
+}
+
+/* Add to Cart button */
+button {
+  background-color: #00b894;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #01976e;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 14px;
+  color: #888;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  margin-top: 4rem;
+}
