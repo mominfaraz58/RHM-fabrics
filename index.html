@@ -7,148 +7,65 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <h1>🧵 RHM Fabrics</h1>
     <p>Premium Boski Suits – Elegant • Affordable • Pakistani 🇵🇰</p>
   </header>
 
-  <section class="products">
+  <main class="container">
     <div class="product">
-      <img src="https://via.placeholder.com/300x400?text=Washwear+Brown" alt="Brown Suit" />
+      <img src="IMG-20250710-WA0001.jpg" alt="Brown Boski Suit" class="product-img" />
       <h2>Washwear Brown</h2>
-      <p>High-quality unstitched Boski fabric</p>
-      <button>Add to Cart</button>
+      <p>High-quality unstitched Boski fabric (4.5m) – Luxury feel</p>
+      <div class="price">Rs. 2500</div>
+      <button onclick="addToCart()">🛒 Add to Cart</button>
+      <a href="https://wa.me/923131448670?text=I want to order the Washwear Brown Boski suit" class="whatsapp" target="_blank">📲 Order on WhatsApp</a>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 RHM Fabrics – All Rights Reserved</p>
-  </footer>
-
-</body>
-</html>
-<section class="products">
-
-  <div class="product">
-    <img src="https://via.placeholder.com/300x400?text=Washwear+Brown" alt="Washwear Brown" />
-    <h2>Washwear Brown</h2>
-    <p>Premium quality Boski fabric</p>
-    <button>Add to Cart</button>
-  </div>
-
-  <div class="product">
-    <img src="https://via.placeholder.com/300x400?text=Luxury+White" alt="Luxury White" />
-    <h2>Luxury White</h2>
-    <p>Shiny finish, unstitched 4.5m</p>
-    <button>Add to Cart</button>
-  </div>
-
-  <div class="product">
-    <img src="https://via.placeholder.com/300x400?text=Classic+Grey" alt="Classic Grey" />
-    <h2>Classic Grey</h2>
-    <p>Soft and breathable boski wear</p>
-    <button>Add to Cart</button>
-  </div>
-
-  <div class="product">
-    <img src="https://via.placeholder.com/300x400?text=Jet+Black" alt="Jet Black" />
-    <h2>Jet Black</h2>
-    <p>Luxury formal suit piece</p>
-    <button>Add to Cart</button>
-  </div>
-
-</section>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>RHM Fabrics Store</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <h1>🧵 RHM Fabrics</h1>
-      <p>Premium Washwear Boski Suits</p>
-    </header>
-
-    <main class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/300x400?text=Brown+Washwear" alt="Brown Suit" />
-        <h2>Washwear Brown Suit</h2>
-        <p>Soft boski – 4.5m unstitched</p>
-        <div class="price">Rs. 2500</div>
-        <div class="actions">
-          <button>Add to Cart</button>
-          <a href="https://wa.me/923131448670" target="_blank" class="whatsapp">Order on WhatsApp</a>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <p>© 2025 RHM Fabrics</p>
-    </footer>
-  </body>
-</html>
-<img src="IMG-20250710-WA0001.jpg" alt="Brown Boski Suit" width="300" />
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RHM Fabrics - Washwear Boski</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>🧵 RHM Fabrics</h1>
-    <p>Premium Washwear Boski Collection</p>
-  </header>
-
-  <main class="product-card">
-    <img src="IMG-20250710-WA0001.jpg" alt="Brown Boski Suit" class="product-img"/>
-    <div class="product-info">
-      <h2>Brown Washwear Boski</h2>
-      <p>Soft, luxurious, and perfect for every occasion. Handpicked quality, made in Pakistan 🇵🇰</p>
-      <button class="buy-btn">Buy Now</button>
+    <div class="cart">
+      <h3>Your Cart</h3>
+      <p id="cart-count">Items: 0</p>
+      <p id="cart-total">Total: Rs. 0</p>
+      <button onclick="checkout()">🧾 Fake Payment</button>
     </div>
-  </main>
 
-  <footer>
-    &copy; 2025 RHM Fabrics. All rights reserved.
-  </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RHM Fabrics - Brown Washwear</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>🧵 RHM Fabrics</h1>
-    <p>Premium Boski Suits – Elegant • Affordable • Pakistani 🇵🇰</p>
-  </header>
-
-  <main class="product-card">
-    <h2>Brown Suit</h2>
-    <img src="IMG-20250710-WA0001.jpg" alt="Brown Washwear Boski" class="product-img" />
-    <div class="product-info">
-      <h3>Washwear Brown</h3>
-      <p>High-quality unstitched Boski fabric – 4.5m • Soft • Luxury feel</p>
-      <button class="buy-btn">Add to Cart</button>
+    <div class="location">
+      <h4>Your Location</h4>
+      <p id="user-location">Detecting...</p>
     </div>
   </main>
 
   <footer>
     &copy; 2025 RHM Fabrics – All Rights Reserved
   </footer>
+
+  <script>
+    let count = 0;
+    let total = 0;
+
+    function addToCart() {
+      count++;
+      total += 2500;
+      document.getElementById('cart-count').innerText = `Items: ${count}`;
+      document.getElementById('cart-total').innerText = `Total: Rs. ${total}`;
+    }
+
+    function checkout() {
+      alert("Thank you for your fake payment! 🧾 Your order will be confirmed on WhatsApp.");
+    }
+
+    // Get user location
+    fetch("https://ipapi.co/json/")
+      .then(response => response.json())
+      .then(data => {
+        const city = data.city;
+        const region = data.region;
+        const country = data.country_name;
+        document.getElementById("user-location").innerText = `${city}, ${region}, ${country}`;
+      })
+      .catch(() => {
+        document.getElementById("user-location").innerText = "Location unavailable.";
+      });
+  </script>
 </body>
 </html>
