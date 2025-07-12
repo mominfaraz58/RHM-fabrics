@@ -490,3 +490,105 @@ Shopify.routes.root = "/";</script>
       window.ShopifyAnalytics.lib = window.trekkie;
 
       var originalDocumentWrite = document.write;
+
+document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"product","resourceType":"product","resourceId":9477937037626,"shopifyEmitted":true});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"PKR","variantId":49182066868538,"productId":9477937037626,"productGid":"gid:\/\/shopify\/Product\/9477937037626","name":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour - off white+navy blue+cream","price":"7499.00","sku":"","brand":"AMR FABRICS","variant":"off white+navy blue+cream","category":"","nonInteraction":true},undefined,undefined,{"shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"PKR","variantId":49182066868538,"productId":9477937037626,"productGid":"gid:\/\/shopify\/Product\/9477937037626","name":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour - off white+navy blue+cream","price":"7499.00","sku":"","brand":"AMR FABRICS","variant":"off white+navy blue+cream","category":"","nonInteraction":true,"referer":"https:\/\/www.amrfabrics.pk\/products\/bundle-of-3-suits-ai-boski-unstitched-fabric-for-men-any-3-colours"});
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//www.amrfabrics.pk/cdn/shopifycloud/storefront/assets/shop_events_listener-8675b082.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script>
+<script
+  defer
+  src="https://www.amrfabrics.pk/cdn/shopifycloud/perf-kit/shopify-perf-kit-1.6.6.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="75070144826"
+  data-render-region="gcp-asia-southeast1"
+  data-page-type="product"
+  data-theme-instance-id="148244857146"
+  data-theme-name="Craft"
+  data-theme-version="9.0.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+></script>
+</head>
+
+  <body class="gradient">
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      Skip to content
+    </a><!-- BEGIN sections: header-group -->
+<div id="shopify-section-sections--18730505044282__announcement-bar" class="shopify-section shopify-section-group-header-group announcement-bar-section"><div class="announcement-bar color-inverse gradient" role="region" aria-label="Announcement" ><div class="page-width">
+                <p class="announcement-bar__message center h5">
+                  <span>Free Delivery on all orders above Rs.1999</span></p>
+              </div></div>
+</div><div id="shopify-section-sections--18730505044282__header" class="shopify-section shopify-section-group-header-group section-header"><link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-list-menu.css?v=151968516119678728991681473960" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-search.css?v=184225813856820874251681473961" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-menu-drawer.css?v=94074963897493609391681473961" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-cart-notification.css?v=108833082844665799571681473960" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-cart-items.css?v=29412722223528841861681473960" media="print" onload="this.media='all'"><link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-price.css?v=65402837579211014041681473961" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-loading-overlay.css?v=167310470843593579841681473960" media="print" onload="this.media='all'"><noscript><link href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-list-menu.css?v=151968516119678728991681473960" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-search.css?v=184225813856820874251681473961" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-menu-drawer.css?v=94074963897493609391681473961" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-cart-notification.css?v=108833082844665799571681473960" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-cart-items.css?v=29412722223528841861681473960" rel="stylesheet" type="text/css" media="all" /></noscript>
+
+<style>
+  header-drawer {
+    justify-self: start;
+    margin-left: -1.2rem;
+  }@media screen and (min-width: 990px) {
+      header-drawer {
+        display: none;
+      }
+    }.menu-drawer-container {
+    display: flex;
+  }
+
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-menu--inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  summary.list-menu__item {
+    padding-right: 2.7rem;
+  }
+
+  .list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+  }
+
+  .list-menu__item--link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+  }
+
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
