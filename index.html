@@ -1,4 +1,4 @@
-
+how
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -264,4 +264,130 @@ Shopify.routes.root = "/";</script>
         --grid-mobile-vertical-spacing: 14px;
         --grid-mobile-horizontal-spacing: 14px;
 
+   --text-boxes-border-opacity: 0.1;
+        --text-boxes-border-width: 0px;
+        --text-boxes-radius: 6px;
+        --text-boxes-shadow-opacity: 0.0;
+        --text-boxes-shadow-visible: 0;
+        --text-boxes-shadow-horizontal-offset: 0px;
+        --text-boxes-shadow-vertical-offset: 4px;
+        --text-boxes-shadow-blur-radius: 5px;
+
+        --buttons-radius: 6px;
+        --buttons-radius-outset: 8px;
+        --buttons-border-width: 2px;
+        --buttons-border-opacity: 1.0;
+        --buttons-shadow-opacity: 0.0;
+        --buttons-shadow-visible: 0;
+        --buttons-shadow-horizontal-offset: 0px;
+        --buttons-shadow-vertical-offset: 4px;
+        --buttons-shadow-blur-radius: 5px;
+        --buttons-border-offset: 0.3px;
+
+        --inputs-radius: 6px;
+        --inputs-border-width: 1px;
+        --inputs-border-opacity: 0.55;
+        --inputs-shadow-opacity: 0.0;
+        --inputs-shadow-horizontal-offset: 0px;
+        --inputs-margin-offset: 0px;
+        --inputs-shadow-vertical-offset: 4px;
+        --inputs-shadow-blur-radius: 5px;
+        --inputs-radius-outset: 7px;
+
+        --variant-pills-radius: 40px;
+        --variant-pills-border-width: 1px;
+        --variant-pills-border-opacity: 0.55;
+        --variant-pills-shadow-opacity: 0.0;
+        --variant-pills-shadow-horizontal-offset: 0px;
+        --variant-pills-shadow-vertical-offset: 4px;
+        --variant-pills-shadow-blur-radius: 5px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: calc(var(--font-body-scale) * 62.5%);
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        font-family: var(--font-body-family);
+        font-style: var(--font-body-style);
+        font-weight: var(--font-body-weight);
+      }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+
+    <link href="//www.amrfabrics.pk/cdn/shop/t/2/assets/base.css?v=140624990073879848751681473960" rel="stylesheet" type="text/css" media="all" />
+<link rel="preload" as="font" href="//www.amrfabrics.pk/cdn/fonts/quattrocento_sans/quattrocentosans_n4.b43a78e6b8b9780ef5893d83cd043417f12e0d99.woff2?h1=YW1yLWZhYnJpY3MuYWNjb3VudC5teXNob3BpZnkuY29t&h2=YW1yZmFicmljcy5waw&hmac=5eb55c8aa1075fd5800e1687ae581b31fa356d7950b323bc300e596e3bbcf12f" type="font/woff2" crossorigin><link rel="preload" as="font" href="//www.amrfabrics.pk/cdn/fonts/helvetica/helvetica_n3.e01288c0d2e8e4f4101819b750499a38c41ed953.woff2?h1=YW1yLWZhYnJpY3MuYWNjb3VudC5teXNob3BpZnkuY29t&h2=YW1yZmFicmljcy5waw&hmac=9c7176756ea966a07aa8267bc9b0591632fab858ce861a2e175ad22adaa20bad" type="font/woff2" crossorigin><link rel="stylesheet" href="//www.amrfabrics.pk/cdn/shop/t/2/assets/component-predictive-search.css?v=85913294783299393391681473961" media="print" onload="this.media='all'"><script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    if (Shopify.designMode) {
+      document.documentElement.classList.add('shopify-design-mode');
+    }
+    </script>
+  <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 75070144826,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "product"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o,i){if(void 0===i&&(i={}),!Boolean(null===(t=null===(a=window.Shopify)||void 0===a?void 0:a.analytics)||void 0===t?void 0:t.replayQueue)){var a,t;window.Shopify=window.Shopify||{};var s=window.Shopify;s.analytics=s.analytics||{};var l=s.analytics;l.replayQueue=[],l.publish=function(e,d,r){return l.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var u=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),c="modern"===u?"modern":"legacy",f=(null!=o?o:{modern:"",legacy:""})[c],m=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:r,hashVersion:n,buildTarget:c}),p=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:n,bundleTarget:u,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{i.browserTarget=u,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:m,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var r=window.webPixelsManager.init(e)||void 0;if(r){d(r);var n=window.Shopify.analytics;n.replayQueue.forEach((function(e){var d=e[0],n=e[1],o=e[2];r.publishCustomEvent(d,n,o)})),n.replayQueue=[],n.publish=r.publishCustomEvent,n.visitor=r.visitor,n.initialized=!0}}},onerror:function(){return p.emit({status:"failed",errorMsg:"".concat(m," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(f)?f:"",scriptDataAttributes:i}),p.emit({status:"loading"})}catch(e){p.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 75070144826,storefrontBaseUrl: "https://www.amrfabrics.pk",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["ac843a20"],webPixelsConfigList: [{"id":"338264378","configuration":"{\"pixel_id\":\"979693893535403\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"6d8c3ef0426b37b2a9b717daeb719f58","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0440","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0440","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"AMR FABRICS","paymentSettings":{"currencyCode":"PKR"},"myshopifyDomain":"amr-fabrics.myshopify.com","countryCode":"PK","storefrontUrl":"https://www.amrfabrics.pk"},"customer":null,"cart":null,"checkout":null,"productVariants":[{"price":{"amount":7499.0,"currencyCode":"PKR"},"product":{"title":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","vendor":"AMR FABRICS","id":"9477937037626","untranslatedTitle":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","url":"/products/bundle-of-3-suits-ai-boski-unstitched-fabric-for-men-any-3-colours","type":""},"id":"49182066868538","image":{"src":"//www.amrfabrics.pk/cdn/shop/files/boski11.jpg?v=1722856925"},"sku":"","title":"off white+navy blue+cream","untranslatedTitle":"off white+navy blue+cream"},{"price":{"amount":7499.0,"currencyCode":"PKR"},"product":{"title":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","vendor":"AMR FABRICS","id":"9477937037626","untranslatedTitle":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","url":"/products/bundle-of-3-suits-ai-boski-unstitched-fabric-for-men-any-3-colours","type":""},"id":"49182066934074","image":{"src":"//www.amrfabrics.pk/cdn/shop/files/boski11.jpg?v=1722856925"},"sku":"","title":"off white+black+cream","untranslatedTitle":"off white+black+cream"},{"price":{"amount":7499.0,"currencyCode":"PKR"},"product":{"title":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","vendor":"AMR FABRICS","id":"9477937037626","untranslatedTitle":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","url":"/products/bundle-of-3-suits-ai-boski-unstitched-fabric-for-men-any-3-colours","type":""},"id":"49182066966842","image":{"src":"//www.amrfabrics.pk/cdn/shop/files/boski11.jpg?v=1722856925"},"sku":"","title":"black+navy blue+off white","untranslatedTitle":"black+navy blue+off white"},{"price":{"amount":7499.0,"currencyCode":"PKR"},"product":{"title":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","vendor":"AMR FABRICS","id":"9477937037626","untranslatedTitle":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","url":"/products/bundle-of-3-suits-ai-boski-unstitched-fabric-for-men-any-3-colours","type":""},"id":"49182066999610","image":{"src":"//www.amrfabrics.pk/cdn/shop/files/boski11.jpg?v=1722856925"},"sku":"","title":"black+navy blue+cream","untranslatedTitle":"black+navy blue+cream"}],"purchasingCompany":null},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});webPixelsManagerAPI.publish("product_viewed", {"productVariant":{"price":{"amount":7499.0,"currencyCode":"PKR"},"product":{"title":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","vendor":"AMR FABRICS","id":"9477937037626","untranslatedTitle":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour","url":"/products/bundle-of-3-suits-ai-boski-unstitched-fabric-for-men-any-3-colours","type":""},"id":"49182066868538","image":{"src":"//www.amrfabrics.pk/cdn/shop/files/boski11.jpg?v=1722856925"},"sku":"","title":"off white+navy blue+cream","untranslatedTitle":"off white+navy blue+cream"}});},"https://www.amrfabrics.pk/cdn","a2c9e64fw38e7850fpd8afd8e8m673daef9",{"modern":"","legacy":""},{"shopId":"75070144826","storefrontBaseUrl":"https://www.amrfabrics.pk","extensionBaseUrl":"https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"ac843a20\"]","isMerchantRequest":"false","hashVersion":"a2c9e64fw38e7850fpd8afd8e8m673daef9","publish":"custom"});</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'PKR';
+  var meta = {"product":{"id":9477937037626,"gid":"gid:\/\/shopify\/Product\/9477937037626","vendor":"AMR FABRICS","type":"","variants":[{"id":49182066868538,"price":749900,"name":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour - off white+navy blue+cream","public_title":"off white+navy blue+cream","sku":""},{"id":49182066934074,"price":749900,"name":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour - off white+black+cream","public_title":"off white+black+cream","sku":""},{"id":49182066966842,"price":749900,"name":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour - black+navy blue+off white","public_title":"black+navy blue+off white","sku":""},{"id":49182066999610,"price":749900,"name":"Bundle of 3 suits AI boski unstitched fabric for men|any 3 colour - black+navy blue+cream","public_title":"black+navy blue+cream","sku":""}]},"page":{"pageType":"product","resourceType":"product","resourceId":9477937037626}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
      
